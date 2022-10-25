@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>HOTEL</title>
+        <meta name="viewport" content="width=device-width, initial-scale = 1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d60e8d49d0.js" crossorigin="anonymous"></script>
+        <link rel="icon" href = "./images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Naziv sajta</span>
+                </div>
+                <div class = "site-nav">
+                    <span class = "nav-btn">MENU <i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+            <div class="head-button-flex">
+                <h2>UZIVAJ OVDE I SPAVAJ LEPO KI BEBA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est quos veniam impedit numquam itaque voluptatum, dicta asperiores accusamus, eligendi neque ut incidunt, modi harum molestiae atque natus officia minima.</p>
+                <button type="button" class = "head-btn">IDEMO BRE</button>
+            </div>
+        </header>
+
+        <!-- SIDE NAV-BAR -->
+        <div class="sidenav" id="sidenav">
+            <span class="cancel-btn" id="cancel-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+
+            <ul class="navbar">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#rooms">ROOMS</a></li>
+                <li><a href="#customers">CUSTOMERS</a></li>
+            </ul>
+            <button class="btn sign-up">SIGN UP</button>
+            <button class="btn log-in">LOG IN</button>
+        </div>
+        <!-- End of sidebar nac-->
+        <div id="modal"></div>
+
+        <section class = "services sec-width" id = "services">
+            <div class="title">
+                <h2>Services</h2>
+            </div>
+            <div class="services-container">
+                <article class = "service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fa-solid fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>FOOD SERVICE / FOOD rUNNEr</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae voluptatem consectetur. Cumque corrupti deserunt neque, consectetur eius, aut repellendus fugit ipsa maiores, cum quisquam atque unde asperiores soluta beatae sint libero deleniti temporibus non molestias quidem. Hic, perspiciatis animi.</p>
+                        <button type="button" class = "btn">Know more</button>
+
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fa-solid fa-water-ladder"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Refreshment</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae voluptatem consectetur. Cumque corrupti deserunt neque, consectetur eius, aut repellendus fugit ipsa maiores, cum quisquam atque unde asperiores soluta beatae sint libero deleniti temporibus non molestias quidem. Hic, perspiciatis animi.</p>
+                        <button type="button" class = "btn">Know more</button>
+
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fa-solid fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae voluptatem consectetur. Cumque corrupti deserunt neque, consectetur eius, aut repellendus fugit ipsa maiores, cum quisquam atque unde asperiores soluta beatae sint libero deleniti temporibus non molestias quidem. Hic, perspiciatis animi.</p>
+                        <button type="button" class = "btn">Know more</button>
+
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fa-solid fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Room Security</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae voluptatem consectetur. Cumque corrupti deserunt neque, consectetur eius, aut repellendus fugit ipsa maiores, cum quisquam atque unde asperiores soluta beatae sint libero deleniti temporibus non molestias quidem. Hic, perspiciatis animi.</p>
+                        <button type="button" class = "btn">Know more</button>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="book">
+            <form class="book form">
+                <div class="form-item">
+                    <label for="checkin-date">Check in date :</label>
+                    <input type="date" id="checkin-date">
+                </div>
+                <div class="form-item">
+                    <label for="checkout-date">Check out date :</label>
+                    <input type="date" id="checkout-date">
+                </div>
+                <div class="form-item">
+                    <label for="adults">Adults :</label>
+                    <input type="number" min = "1" value = "1" id="adults">
+                </div>
+                <div class="form-item">
+                    <label for="children">Children :</label>
+                    <input type="number" min="0" value="0" id="children">
+                </div>
+                <div class="form-item">
+                    <label for="rooms">Rooms :</label>
+                    <input type="number" min = "1" value="1" id="rooms">
+                </div>
+                <div class="form-item">
+                    <input type="submit" class="btn" value="Book now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id="rooms">
+            <div class="title">
+                <h2>rooms</h2>
+            </div>
+            <div class="rooms-container">
+                <article class="room">
+                    <div class="room-img">
+                        <img src="./images/img1.jpg" alt="room image">
+                        
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
